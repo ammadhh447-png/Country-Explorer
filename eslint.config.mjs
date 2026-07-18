@@ -2,12 +2,16 @@ import { createRequire } from "node:module";
 import { defineConfig, globalIgnores } from "eslint/config";
 
 const require = createRequire(import.meta.url);
-const nextVitals = require("eslint-config-next/core-web-vitals");
-const nextTs = require("eslint-config-next/typescript");
+
+function loadFlatConfig(id) {
+  const mod = require(id);
+  const value = mod?.default ?? mod;
+  return Array.isArray(value) ? value : [];
+}
 
 const eslintConfig = defineConfig([
-  ...nextVitals,
-  ...nextTs,
+  ...loadFlatConfig("eslint-config-next/core-web-vitals"),
+  ...loadFlatConfig("eslint-config-next/typescript"),
   globalIgnores([".next/**", "out/**", "build/**", "next-env.d.ts"]),
 ]);
 
