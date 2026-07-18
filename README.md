@@ -114,13 +114,7 @@ npm run dev
 
 Open http://localhost:3000
 
-## Architecture Notes
 
-- Server routes fetch and merge external datasets; the client consumes internal APIs only.
-- TanStack Query caches country data on the client.
-- The assistant uses LLM parsing when configured; all factual answers come from the country database.
-- Theme tokens in `globals.css` drive light and dark styling consistently.
-- Legacy routes `/travel`, `/timezone`, and `/unesco` redirect via `next.config.ts`.
 
 ## License
 
