@@ -89,13 +89,12 @@ src/
 
 | Variable | Required | Description |
 |----------|----------|-------------|
-| `OPENROUTER_API_KEY` | No | Enables LLM intent parsing for the assistant |
-| `OPENROUTER_MODEL` | No | Model slug (default: `openai/gpt-4o-mini`) |
-| `OPENAI_API_KEY` | No | Alternative to OpenRouter |
-| `OPENAI_MODEL` | No | OpenAI model name |
-| `NEXT_PUBLIC_SITE_URL` | No | Site URL for OpenRouter headers |
+| `OPENROUTER_API_KEY` | Yes | Enables LLM intent parsing for the assistant |
+| `OPENROUTER_MODEL` | Yes | Model slug (default: `openai/gpt-4o-mini`) |
+NEXT_PUBLIC_SITE_URL=http://localhost:3000
 
-Copy `.env.example` to `.env.local` and add your keys.
+
+.env.local` and add your keys.
 
 ## Scripts
 
@@ -117,13 +116,7 @@ npm run dev
 
 Open http://localhost:3000
 
-## Architecture Notes
 
-- Server routes fetch and merge external datasets; the client consumes internal APIs only.
-- TanStack Query caches country data on the client.
-- The assistant uses LLM parsing when configured; all factual answers come from the country database.
-- Theme tokens in `globals.css` drive light and dark styling consistently.
-- Legacy routes `/travel`, `/timezone`, and `/unesco` redirect via `next.config.ts`.
 
 ## License
 
