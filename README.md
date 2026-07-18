@@ -91,6 +91,8 @@ src/
 |----------|----------|-------------|
 | `OPENROUTER_API_KEY` | Yes | Enables LLM intent parsing for the assistant |
 | `OPENROUTER_MODEL` | Yes | Model slug (default: `openai/gpt-4o-mini`) |
+NEXT_PUBLIC_SITE_URL=http://localhost:3000
+
 
 .env.local` and add your keys.
 
