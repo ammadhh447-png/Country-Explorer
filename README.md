@@ -2,6 +2,9 @@
 
 Web application for exploring countries with live profiles, maps, statistics, comparisons, rankings, world time, and an AI assistant.
 
+# LIVE DEMO
+https://country-explorer-xi-sable.vercel.app/
+
 ## Overview
 
 | Item | Description |
