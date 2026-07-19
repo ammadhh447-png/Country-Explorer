@@ -24,7 +24,7 @@ https://country-explorer-xi-sable.vercel.app/
 | Components | Radix UI, shadcn-style primitives |
 | Data fetching | TanStack Query |
 | Charts | Recharts |
-| Maps | React Simple Maps, d3-geo, TopoJSON |
+| Maps | React Simple Maps |
 | Motion | Framer Motion |
 | Theme | next-themes |
 | Notifications | Sonner |
